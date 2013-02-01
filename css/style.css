@@ -361,6 +361,12 @@ body{background:url(../img/body.jpg) no-repeat center 33px;}
 .m22 .b3 input{width:275px; height:25px; line-height:25px; border:1px solid #CAACAC;}
 .m22 .b3 .br1{ padding-left:120px; margin-bottom:29px;}
 .m22 .b3 .br2{text-align:center;}
+/*-------------------点广告赢积分m23--------------------------*/
+.m23{background:url(../img/m23.png) no-repeat; height:553px; padding:10px 13px 0;}
+.m23 h2{background-image:url(../img/m23-h.png);}
+.m23 .br1{margin-left:-31px; padding-top:38px;}
+.m23 dl{width:209px; margin:0 0 30px 31px;}
+.m23 img{padding:4px; border:1px solid #D1A7A7;}
 
 /*-------------------内页--------------------------*/
 .pga{background:url(../img/pgn-body.jpg) no-repeat center 33px;}
