@@ -65,60 +65,62 @@
 						<!--循环12-->
 						<dl>
 							<dd>
-								<a href="#"><img src="http://placebox.es/199/110" alt=""></a>
+								<a target="_blank" href="#"><img src="http://placebox.es/199/110" alt=""></a>
 							</dd>
 						</dl>
 						<dl>
 							<dd>
-								<a href="#"><img src="http://placebox.es/199/110" alt=""></a>
+								<a target="_blank" href="#"><img src="http://placebox.es/199/110" alt=""></a>
 							</dd>
 						</dl>
-						<dl>
+                        <dl>
 							<dd>
-								<a href="#"><img src="http://placebox.es/199/110" alt=""></a>
+								<a target="_blank" href="#"><img src="http://placebox.es/199/110" alt=""></a>
 							</dd>
 						</dl>
-						<dl>
+                        <dl>
 							<dd>
-								<a href="#"><img src="http://placebox.es/199/110" alt=""></a>
+								<a target="_blank" href="#"><img src="http://placebox.es/199/110" alt=""></a>
 							</dd>
 						</dl>
-						<dl>
+                        <dl>
 							<dd>
-								<a href="#"><img src="http://placebox.es/199/110" alt=""></a>
+								<a target="_blank" href="#"><img src="http://placebox.es/199/110" alt=""></a>
 							</dd>
 						</dl>
-						<dl>
+                        <dl>
 							<dd>
-								<a href="#"><img src="http://placebox.es/199/110" alt=""></a>
-							</dd>
-						</dl><dl>
-							<dd>
-								<a href="#"><img src="http://placebox.es/199/110" alt=""></a>
+								<a target="_blank" href="#"><img src="http://placebox.es/199/110" alt=""></a>
 							</dd>
 						</dl>
-						<dl>
+                        <dl>
 							<dd>
-								<a href="#"><img src="http://placebox.es/199/110" alt=""></a>
+								<a target="_blank" href="#"><img src="http://placebox.es/199/110" alt=""></a>
 							</dd>
 						</dl>
-						<dl>
+                        <dl>
 							<dd>
-								<a href="#"><img src="http://placebox.es/199/110" alt=""></a>
+								<a target="_blank" href="#"><img src="http://placebox.es/199/110" alt=""></a>
 							</dd>
 						</dl>
-						<dl>
+                        <dl>
 							<dd>
-								<a href="#"><img src="http://placebox.es/199/110" alt=""></a>
-							</dd>
-						</dl><dl>
-							<dd>
-								<a href="#"><img src="http://placebox.es/199/110" alt=""></a>
+								<a target="_blank" href="#"><img src="http://placebox.es/199/110" alt=""></a>
 							</dd>
 						</dl>
-						<dl>
+                        <dl>
 							<dd>
-								<a href="#"><img src="http://placebox.es/199/110" alt=""></a>
+								<a target="_blank" href="#"><img src="http://placebox.es/199/110" alt=""></a>
+							</dd>
+						</dl>
+                        <dl>
+							<dd>
+								<a target="_blank" href="#"><img src="http://placebox.es/199/110" alt=""></a>
+							</dd>
+						</dl>
+                        <dl>
+							<dd>
+								<a target="_blank" href="#"><img src="http://placebox.es/199/110" alt=""></a>
 							</dd>
 						</dl>
 						<!--/循环-->
@@ -137,41 +139,24 @@
 <script src="js/jquery.min.js" ignoreapd="1"></script>
 <script src="js/script.js" ignoreapd="1"></script>
 <script>
-$.fn.reorder = function() {
-  function randOrd() { return(Math.round(Math.random())-0.5); }
- 
-  return($(this).each(function() {
-    var $this = $(this);
-    var $children = $this.children();
-    var childCount = $children.length;
- 
-    if (childCount > 1) {
-      $children.remove();
- 
-      var indices = new Array();
-      for (i=0;i<childCount;i++) { indices[indices.length] = i; }
-      indices = indices.sort(randOrd);
-      $.each(indices,function(j,k) { $this.append($children.eq(k)); });
- 
-    }
-  }));
-}
 $(function(){
-	var x = 0;/*上限 */ 
-	var y = 11;/*下限*/ 
-	var rand = parseInt(Math.random() * (y - x + 1) + x); 
-	$('.m23 dl').eq(rand).addClass('e').click(function(){
-			alert('恭喜你中奖');
-		 /*
-		 $.post("winning.php",{winning:ture},function(result){
-			alert('恭喜你中奖');
+	var img= new Random();
+	var img_array=img.init(4,11,0);//随机图片
+	var num=[10,20,30,40];//分数
+	function img_click(i){
+		$('.m23 dl').eq(img_array[i]).click(function(){
+		alert('恭喜您得'+num[i]+'状元币');
+		 /*传值给后台
+		 $.post("num.php",{num:num[i]},function(){
+			alert('恭喜您得'+num[i]+'状元币);;
 		 });
 		 */
-	})
+		})	}
+	for (var i=0; i<4; i++) {
+		img_click(i);
+	}
 })
-    
 </script> 
-</script>
 <!--[if IE 6]>
 <script src="js/DD_belatedPNG_0.0.8a-min.js" ignoreapd="1"></script>
 <script>
