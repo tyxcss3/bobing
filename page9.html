@@ -147,10 +147,9 @@ $(function(){
 	var num=[10,20,30,40];//分数
 	function img_click(i){
 		$('.m23 dl').eq(img_array[i]).one('click',function(){
-			alert('恭喜您得'+num[i]+'状元币');
 			 $.post("num.php",{num:num[i]},function(result){
-				if(result=="4"){
-					alert('今天已没有博饼币');	
+				if(result==4){
+					alert('今天已没有状元币');	
 				}else{
 					alert('恭喜您得'+num[i]+'状元币');	
 				}
