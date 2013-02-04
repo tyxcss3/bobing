@@ -366,7 +366,7 @@ body{background:url(../img/body.jpg) no-repeat center 33px;}
 .m23 h2{background-image:url(../img/m23-h.png);}
 .m23 .br1{margin-left:-31px; padding-top:38px;}
 .m23 dl{width:209px; margin:0 0 30px 31px; -webkit-transition:all 1s;}
-.m23 dl:hover{-webkit-transform:scaleX(180deg);}
+.m23 dl:hover{-webkit-transform:rotateX(360deg);}
 .m23 img{padding:4px; border:1px solid #D1A7A7;}
 
 /*-------------------内页--------------------------*/
