@@ -65,60 +65,62 @@
 						<!--循环12-->
 						<dl>
 							<dd>
-								<a href="#"><img src="http://placebox.es/199/110" alt=""></a>
+								<a target="_blank" href="#"><img src="http://placebox.es/199/110" alt=""></a>
 							</dd>
 						</dl>
 						<dl>
 							<dd>
-								<a href="#"><img src="http://placebox.es/199/110" alt=""></a>
+								<a target="_blank" href="#"><img src="http://placebox.es/199/110" alt=""></a>
 							</dd>
 						</dl>
-						<dl>
+                        <dl>
 							<dd>
-								<a href="#"><img src="http://placebox.es/199/110" alt=""></a>
+								<a target="_blank" href="#"><img src="http://placebox.es/199/110" alt=""></a>
 							</dd>
 						</dl>
-						<dl>
+                        <dl>
 							<dd>
-								<a href="#"><img src="http://placebox.es/199/110" alt=""></a>
+								<a target="_blank" href="#"><img src="http://placebox.es/199/110" alt=""></a>
 							</dd>
 						</dl>
-						<dl>
+                        <dl>
 							<dd>
-								<a href="#"><img src="http://placebox.es/199/110" alt=""></a>
+								<a target="_blank" href="#"><img src="http://placebox.es/199/110" alt=""></a>
 							</dd>
 						</dl>
-						<dl>
+                        <dl>
 							<dd>
-								<a href="#"><img src="http://placebox.es/199/110" alt=""></a>
-							</dd>
-						</dl><dl>
-							<dd>
-								<a href="#"><img src="http://placebox.es/199/110" alt=""></a>
+								<a target="_blank" href="#"><img src="http://placebox.es/199/110" alt=""></a>
 							</dd>
 						</dl>
-						<dl>
+                        <dl>
 							<dd>
-								<a href="#"><img src="http://placebox.es/199/110" alt=""></a>
+								<a target="_blank" href="#"><img src="http://placebox.es/199/110" alt=""></a>
 							</dd>
 						</dl>
-						<dl>
+                        <dl>
 							<dd>
-								<a href="#"><img src="http://placebox.es/199/110" alt=""></a>
+								<a target="_blank" href="#"><img src="http://placebox.es/199/110" alt=""></a>
 							</dd>
 						</dl>
-						<dl>
+                        <dl>
 							<dd>
-								<a href="#"><img src="http://placebox.es/199/110" alt=""></a>
-							</dd>
-						</dl><dl>
-							<dd>
-								<a href="#"><img src="http://placebox.es/199/110" alt=""></a>
+								<a target="_blank" href="#"><img src="http://placebox.es/199/110" alt=""></a>
 							</dd>
 						</dl>
-						<dl>
+                        <dl>
 							<dd>
-								<a href="#"><img src="http://placebox.es/199/110" alt=""></a>
+								<a target="_blank" href="#"><img src="http://placebox.es/199/110" alt=""></a>
+							</dd>
+						</dl>
+                        <dl>
+							<dd>
+								<a target="_blank" href="#"><img src="http://placebox.es/199/110" alt=""></a>
+							</dd>
+						</dl>
+                        <dl>
+							<dd>
+								<a target="_blank" href="#"><img src="http://placebox.es/199/110" alt=""></a>
 							</dd>
 						</dl>
 						<!--/循环-->
@@ -136,6 +138,25 @@
 </div>
 <script src="js/jquery.min.js" ignoreapd="1"></script>
 <script src="js/script.js" ignoreapd="1"></script>
+<script>
+$(function(){
+	var img= new Random();
+	var img_array=img.init(4,11,0);//随机图片
+	var num=[10,20,30,40];//分数
+	function img_click(i){
+		$('.m23 dl').eq(img_array[i]).one('click',function(){
+		alert('恭喜您得'+num[i]+'状元币');
+		 /*传值给后台
+		 $.post("num.php",{num:num[i]},function(){
+			alert('恭喜您得'+num[i]+'状元币);;
+		 });
+		 */
+		})	}
+	for (var i=0; i<4; i++) {
+		img_click(i);
+	}
+})
+</script> 
 <!--[if IE 6]>
 <script src="js/DD_belatedPNG_0.0.8a-min.js" ignoreapd="1"></script>
 <script>

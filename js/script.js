@@ -74,3 +74,40 @@ function Slider1(s){
 		slider();
 	}
 }
+//获取随机数
+function Random() {  
+  
+}  
+  
+/* 
+ * 三个参数，随机个数，随机的范围，最大值和最小值 
+ */  
+Random.prototype. _getRandom= function(Rnum,MaxNum,MinNum) {  
+    var RandomArr=[]//临时保存随机数数组  
+    for(var i=0;i<Rnum;i++) {  
+        var num=Math.round(Math.random()*(MaxNum-MinNum)+MinNum);  
+        RandomArr.push(num);  
+    }  
+    return RandomArr;  
+  
+}  
+Random.prototype.init= function(Rnum,MaxNum,MinNum) {  
+    var getRadmon=[];//随机数组保存数组  
+    var _random=new Random()  
+    //判断一些另类的操作  
+    if(Rnum==undefined||MaxNum==undefined||MinNum==undefined||Rnum>MaxNum||MinNum>MaxNum) {  
+        return false;  
+    }  
+    var RandomArr=_random._getRandom(Rnum,MaxNum,MinNum);//执行产生随机数  
+    var length=RandomArr.length;//计算临时随机数的长度  
+    for(var i=0;i<length;i++) {//遍历临时随机数数组  
+        for(var j=i+1;j<length;j++) {  
+            if(RandomArr[i]===RandomArr[j]) {//使用while循环判断，如果出现相等的，就返回自身函数，在执行一次  
+                return arguments.callee(Rnum,MaxNum,MinNum);  
+            }  
+        }  
+  
+        getRadmon.push(RandomArr[i]);//将不相等的随机数保存在一个组数中  
+    }  
+    return getRadmon//返回结果  
+}  
