@@ -142,8 +142,8 @@ body{background:url(../img/body.jpg) no-repeat center 33px;}
 #h .r2 .a1{color:#d62800; margin:0 5px;}
 #h .r2 .btn1{margin-right:5px;}
 #h .r2 .btn2{margin-right:5px;}
-#h .r2 .c1{width:628px;}
-#h .r2 .c2{width:274px;}
+#h .r2 .c1{*width:628px;}
+#h .r2 .c2{*width:274px;}
 #h .r2 .c3 .s1 a{color:#383838; font-weight:bold;}
 #h .r2 .c3 span{margin-right:5px;}
 #h .r2 .c3 b{color:#C51C01;}
