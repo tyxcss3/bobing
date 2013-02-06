@@ -294,6 +294,7 @@ body{background:url(../img/body.jpg) no-repeat center 33px;}
 .m13 .b{padding-top:19px;}
 .m13 dl{ margin:0 28px; width:280px;}
 .m13 dt{height:22px; line-height:22px; margin-top:5px;}
+.m13 dt,
 .m13 dt a{color:#fff;}
 /*-------------------赞助商m14--------------------------*/
 .m14{background:url(../img/m14.png) no-repeat; height:336px; padding:6px;}
@@ -327,6 +328,7 @@ body{background:url(../img/body.jpg) no-repeat center 33px;}
 .m18 .br1{margin-left:-15px;}
 .m18 dl{width:156px; height:156px; overflow:hidden; margin:0 0 6px 15px; position:relative;}
 .m18 dt{height:26px; line-height:26px; position:absolute; width:100%; left:0; bottom:0;background:rgb(123,46,20);background:rgba(123,46,20,0.7);}
+.m18 dt,
 .m18 dt a{color:#fff;}
 /*-------------------活动新闻m19--------------------------*/
 .m19{margin-left:14px;}
