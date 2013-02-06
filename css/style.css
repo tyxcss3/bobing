@@ -126,6 +126,7 @@ i{display:inline-block; margin-right:5px; font-style:normal;}
 .btn1{width:45px; height:22px; background:url(../img/btn1.jpg) no-repeat; color:#fff;}
 .btn2{width:45px; height:22px; line-height:22px; display:inline-block; background:url(../img/btn2.jpg) no-repeat; text-align:center; color:#fff;}
 .btn3{ width:82px; height:34px; font-size:18px; background:url(../img/m22-btn1.png) no-repeat; color:#fff;}
+.btn4{color:#CF3600; font-size:18px; background:url(../img/btn4.jpg) no-repeat; width:85px; height:31px; padding-top:31px; overflow:hidden;}
 /*-------------------布局--------------------------*/
 .w{width:963px; margin:0 auto;}
 /*-------------------头部--------------------------*/
@@ -257,6 +258,13 @@ body{background:url(../img/body.jpg) no-repeat center 33px;}
 .m8 .ba .br2{text-align:right; padding:13px 25px 0 0;}
 .m8 .ba .br2 a{color:#fff; margin:0 5px;}
 .m8 .ba .br2 .current{ color:#F0FF00;}
+
+.m8 .b4 label{ display:inline-block; width:81px; color:#fff; text-align:right; font-size:14px; margin-right:10px;}
+.m8 .b4 input{width:230px; border:1px solid #872300;}
+
+.m8 .b4 .br1{ padding:171px 0 0 174px; margin-bottom:25px;}
+.m8 .b4 .br1 li{margin-bottom:10px;}
+.m8 .b4 .br2{ text-align:center;}
 /*-------------------博饼科举参照表m9--------------------------*/
 .m9{padding-left:14px;}
 .m9 h2{color:#CF3600;padding-left:13px; height:32px; line-height:32px;}
@@ -486,7 +494,6 @@ animation-delay:1.2s;
 .pga{background:url(../img/pgn-body.jpg) no-repeat center 33px;}
 .pga #h{padding-top:332px;}
 .pga .m12{background:url(../img/pg3-m12.png) no-repeat; height:356px; padding:6px; margin-bottom:6px;}
-.pg2 .m12{background:url(../img/m12.png) no-repeat; height:499px;}
 .pg4 .m13{background:url(../img/pg4-m13.png) no-repeat; margin:0 8px; padding:8px 0;}
 .pg2 #h .r1 .li2 a,
 .pg3 #h .r1 .li3 a,
