@@ -258,7 +258,7 @@ body{background:url(../img/body.jpg) no-repeat center 33px;}
 .m8 .ba .br2{text-align:right; padding:13px 25px 0 0;}
 .m8 .ba .br2 a{color:#fff; margin:0 5px;}
 .m8 .ba .br2 .current{ color:#F0FF00;}
-
+.m8 .b4 legend{font-size:18px; color:#fff; margin:0 0 20px 90px;}
 .m8 .b4 label{ display:inline-block; width:81px; color:#fff; text-align:right; font-size:14px; margin-right:10px;}
 .m8 .b4 input{width:230px; border:1px solid #872300;}
 
