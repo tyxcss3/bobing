@@ -89,6 +89,7 @@
 							</dd>
 						</dl>
                         <dl>
+							
 							<dd>
 								<a target="_blank" href="#"><img src="http://placebox.es/199/110" alt=""></a>
 							</dd>
@@ -140,18 +141,21 @@
 <script src="js/script.js" ignoreapd="1"></script>
 <script>
 $(function(){
+	$('.m23 dl').append('<div class="mask"></div>');
 	var img= new Random();
 	var img_array=img.init(4,11,0);//随机图片
 	var num=[10,20,30,40];//分数
 	function img_click(i){
 		$('.m23 dl').eq(img_array[i]).one('click',function(){
-		alert('恭喜您得'+num[i]+'状元币');
-		 /*传值给后台
-		 $.post("num.php",{num:num[i]},function(){
-			alert('恭喜您得'+num[i]+'状元币);;
-		 });
-		 */
-		})	}
+			 $.post("num.php",{num:num[i]},function(result){
+				if(result==4){
+					alert('今天已没有状元币');	
+				}else{
+					alert('恭喜您得'+num[i]+'状元币');	
+				}
+			 });
+			})	
+		}
 	for (var i=0; i<4; i++) {
 		img_click(i);
 	}

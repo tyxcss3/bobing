@@ -73,7 +73,7 @@
                             <li class="active"><a href="#">在线博饼</a></li>
                             <li><a href="#">我的积分</a></li>
 							<li><a href="#">我的博饼记录</a></li>
-							<li><a href="#">我的兑奖记录</a></li>
+							<li><a href="#">个人信息</a></li>
                         </ul>
 						<div class="hr">
                             <a href="#">活动说明</a>
@@ -82,7 +82,15 @@
                     </div>
                     <div class="b b1 active">
                         <h2 class="vh">在线博饼</h2>
-                        1
+                        <div class="br1">
+							<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="area" width="619" height="578" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab">
+							<param name="movie" value="http://bobing.xmnn.cn/api/preloader.swf">
+							<param name="quality" value="high">
+							<param name="wmode" value="transparent"/>
+							<param name="allowScriptAccess" value="always">
+							<embed src="http://bobing.xmnn.cn/api/preloader.swf" quality="high" width="619" height="578" name="area" align="middle" play="true" loop="false" allowscriptaccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" wmode="transparent">
+							</object>
+						</div>
                     </div>
                     <div class="b b2">
                         <h2 class="vh">我的积分</h2>
@@ -134,48 +142,23 @@
                             <a href="#">8</a>
                         </div>
                     </div>
-                    <div class="b b4 ba">
-                        <h2 class="vh">我的兑奖记录</h2>
-                        <div class="br1">
-                        	<table>
-                            	<caption><span class="vh">兑奖记录表</span></caption>
-                                <colgroup>
-                                	<col width="147" />
-                                    <col width="350" />
-                                    <col width="127" />
-                                </colgroup>
-                                <thead>
-                                	<tr><th>日期<i class="i9"></i></th><th>博饼排名</th><th>总积分</th></tr>
-                                </thead>
-                                <tbody>
-                                	<!--循环13-->
-                                	<tr><td class="td1">2012/08/01</td><td class="td2">300</td><td class="td3">1980</td></tr>
-                                    <tr><td class="td1">2012/08/01</td><td class="td2">300</td><td class="td3">1980</td></tr>
-                                    <tr><td class="td1">2012/08/01</td><td class="td2">300</td><td class="td3">1980</td></tr>
-                                    <tr><td class="td1">2012/08/01</td><td class="td2">300</td><td class="td3">1980</td></tr>
-                                    <tr><td class="td1">2012/08/01</td><td class="td2">300</td><td class="td3">1980</td></tr>
-                                    <tr><td class="td1">2012/08/01</td><td class="td2">300</td><td class="td3">1980</td></tr>
-                                    <tr><td class="td1">2012/08/01</td><td class="td2">300</td><td class="td3">1980</td></tr>
-                                    <tr><td class="td1">2012/08/01</td><td class="td2">300</td><td class="td3">1980</td></tr>
-                                    <tr><td class="td1">2012/08/01</td><td class="td2">300</td><td class="td3">1980</td></tr>
-                                    <tr><td class="td1">2012/08/01</td><td class="td2">300</td><td class="td3">1980</td></tr>
-                                    <tr><td class="td1">2012/08/01</td><td class="td2">300</td><td class="td3">1980</td></tr>
-                                    <tr><td class="td1">2012/08/01</td><td class="td2">300</td><td class="td3">1980</td></tr>
-                                    <tr><td class="td1">2012/08/01</td><td class="td2">300</td><td class="td3">1980</td></tr>
-                                    <!--/循环-->
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="br2">
-                        	<a href="#">1</a>
-                            <a href="#">2</a>
-                            <a class="current">[ 3 ]</a>
-                            <a href="#">4</a>
-                            <a href="#">5</a>
-                            <a href="#">6</a>
-                            <a href="#">7</a>
-                            <a href="#">8</a>
-                        </div>
+                    <div class="b b4">
+                        <h2 class="vh">个人信息</h2>
+                        	<form action="" method="post">
+								<fieldset>
+									<div class="br1">
+										<legend>填写个人信息</legend>
+										<ol>
+											<li><label for="relname">姓名:</label><input id="relname" name="relname" /></li>
+											<li><label for="telphone">电话:</label><input id="telphone" name="telphone" /></li>
+											<li><label for="sfz">身份证号码:</label><input id="sfz" name="sfz" /></li>
+										</ol>
+									</div>
+									<div class="br2">
+										<button type="submit" class="btn btn4">提交</button>
+									</div>
+								</fieldset>
+							</form>
                     </div>
                 </div>
                 <!--在线博饼-->
@@ -393,7 +376,7 @@ $(function(){
 <!--[if IE 6]>
 <script src="js/DD_belatedPNG_0.0.8a-min.js" ignoreapd="1"></script>
 <script>
-	DD_belatedPNG.fix('.m10,.m11,.m12,.m13,.m14,#b .r3 .c1,.bn1，.m8 .b2 .br1,.bn1');
+	DD_belatedPNG.fix('.m10,.m11,.m12,.m13,.m14,.bn1');
 </script>
 <![endif]-->
 </body>

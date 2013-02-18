@@ -4,10 +4,11 @@ $(function(){
 	}); 
 	$('#h').load('http://bobing.xmnn.cn/api/my.php');
 	//tab
-		$('.tab .h li').hover(function(){
+		$('.tab .h li').click(function(){
 		$(this).addClass('active').siblings().removeClass('active');
 		var index=$('.tab .h li').index(this);
 		$('.tab .b').eq(index).addClass('active').siblings('.b').removeClass('active');
+		return false;
 	})
 })
 //左右滚动
